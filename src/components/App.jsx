@@ -10,6 +10,7 @@ export const App = () => {
         color: '#010101'
       }}
     >
+      <p>Anything new to add?</p>
       React homework 2
     </div>
   );
