@@ -3,13 +3,12 @@ import FeedbackOptions from './FeedbackOptions';
 import Statistics from './Statistics';
 import NotificationMessage from './NotificationMessage';
 import Section from './Section';
+import PropTypes from 'prop-types';
 
 class App extends React.Component {
   static defaultProps = {
     initialValue: 0,
   };
-
-  static propTypes = {};
 
   state = {
     good: this.props.initialValue,
