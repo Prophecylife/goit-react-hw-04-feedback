@@ -7,6 +7,7 @@ import Section from './Section';
 class App extends React.Component {
   static defaultProps = {
     initialValue: 0,
+    initialMessage: 'No feedback given',
   };
 
   state = {
@@ -43,7 +44,7 @@ class App extends React.Component {
         </Section>
         <Section title={'Statistics'}>
           {total === 0 ? (
-            <NotificationMessage />
+            <NotificationMessage message={this.props.initialMessage} />
           ) : (
             <Statistics
               good={this.state.good}
